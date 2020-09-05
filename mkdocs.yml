@@ -1,0 +1,66 @@
+site_name: 小浪人
+site_author: Erics
+site_description: '站点描述'
+#copyright: docs.xiaolangren.cn
+site_dir: site
+docs_dir: 'docs'
+extra_css:
+  - css/nav.css
+use_directory_urls: true # 默认是true
+extra_javascript:
+  - extra_javascript/nav.js
+plugins: []
+#repo_url: https://github.com/example/repository/
+extra:
+  version: 0.1.0
+repo_name: 'GitHub' # 默认
+remote_branch: gh-pages # 默认
+#当使用gh-deploy部署到Github Pages时，设置要推送到的远程名称。 可以通过gh-deploy中的命令行选项覆盖此选项。
+remote_name: origin
+dev_addr: '127.0.0.1:8000'
+nav:
+  - 首页: index.md
+  - Python:
+      - 1. Python: python/python3.md
+      - 2. 设计模式: python/design-pattern.md
+      - 3. 数据结构: python/data-structure.md
+      - 4. 算法基础: python/algorithm.md
+      - 5. Leetcode: python/leetcode.md
+      - 6. 剑指Offer: python/offer.md
+      - 7. 面试题: python/interview.md
+  - Python Web:
+      - 1. Django: python-web/django.md
+      - 2. Django Rest Framework: python-web/drf.md
+      - 3. Flask: python-web/flask.md
+      - 4. Mysql: python-web/mysql.md
+      - 5. Redis: python-web/redis.md
+      - 6. 面试题: python/algorithm.md
+  - Python GUI:
+      - 1. PyQt5: gui/pyqt5.md
+  - 网络爬虫:
+      - 1. Scrapy: web-crawler/scrapy.md
+  - 数据分析:
+      - 1. NumPy: data-analysis/numpy.md
+      - 2. Pandas: data-analysis/pandas.md
+  - 计算机视觉:
+      - 1. OpenCV: computer-vision/opencv.md
+  - 机器学习:
+      - 1. 机器学习数学相关: machine-learning/math.md
+      - 2. 机器学习算法: machine-learning/machine-learning-algorithm.md
+      - 3. 机器学习与量化交易: machine-learning/quantitative-trading.md
+  - 深度学习:
+      - 1. CNN: deep-learning/tensorflow.md
+      - 2. RNN: deep-learning/tensorflow.md
+      - 3. TensorFlow: deep-learning/tensorflow.md
+theme:
+  name: mkdocs
+  custom_dir: custom_theme
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
