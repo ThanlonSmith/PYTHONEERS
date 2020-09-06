@@ -1,19 +1,21 @@
 site_name: 小浪人
 site_author: Erics
-site_description: '站点描述'
+site_description: '小浪人平台是专为Python工程师、AI工程师、算法工程师等Python相关职业人群提供技术支持、源代码共享的综合平台。未来是人工智能的天下，小浪人愿意做人工智能技术的推动者。'
 #copyright: docs.xiaolangren.cn
 site_dir: site
 docs_dir: 'docs'
 extra_css:
   - css/nav.css
-  - css/main.css
+  - css/public.css
 use_directory_urls: true # 默认是true
 extra_javascript:
-  - extra_javascript/nav.js
+  - js/main.js
+#  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+  - js/busuanzi.pure.mini.js
 plugins: []
 #repo_url: https://github.com/example/repository/
 extra:
-  version: 0.1.0
+  version: 1.0.0
 repo_name: 'GitHub' # 默认
 remote_branch: gh-pages # 默认
 #当使用gh-deploy部署到Github Pages时，设置要推送到的远程名称。 可以通过gh-deploy中的命令行选项覆盖此选项。
@@ -22,37 +24,39 @@ dev_addr: '127.0.0.1:8000'
 nav:
   - 首页: index.md
   - Python:
-      - 1. Python: python/python3.md
-      - 2. 设计模式: python/design-pattern.md
-      - 3. 数据结构: python/data-structure.md
-      - 4. 算法基础: python/algorithm.md
-      - 5. Leetcode: python/leetcode.md
-      - 6. 剑指Offer: python/offer.md
-      - 7. 面试题: python/interview.md
+      - Python: python/python3.md
+      - 设计模式: python/design-pattern.md
+      - 数据结构: python/data-structure.md
+      - 算法基础: python/algorithm.md
+      - Leetcode: python/leetcode.md
+      - 剑指Offer: python/offer.md
+      - 面试题: python/interview.md
   - Python Web:
-      - 1. Django: python-web/django.md
-      - 2. Django Rest Framework: python-web/drf.md
-      - 3. Flask: python-web/flask.md
-      - 4. Mysql: python-web/mysql.md
-      - 5. Redis: python-web/redis.md
-      - 6. 面试题: python/algorithm.md
+      - Django: python-web/django.md
+      - Django Rest Framework: python-web/drf.md
+      - Flask: python-web/flask.md
+      - Mysql: python-web/mysql.md
+      - Redis: python-web/redis.md
+      - 面试题: python-web/interview.md
   - Python GUI:
-      - 1. PyQt5: gui/pyqt5.md
+      - PyQt5: gui/pyqt5.md
   - 网络爬虫:
-      - 1. Scrapy: web-crawler/scrapy.md
+      - Requests: web-crawler/requests.md
+      - Scrapy: web-crawler/scrapy.md
   - 数据分析:
-      - 1. NumPy: data-analysis/numpy.md
-      - 2. Pandas: data-analysis/pandas.md
+      - NumPy: data-analysis/numpy.md
+      - Pandas: data-analysis/pandas.md
+      - Matplotlib: data-analysis/matplotlib.md
   - 计算机视觉:
-      - 1. OpenCV: computer-vision/opencv.md
+      - OpenCV: computer-vision/opencv.md
   - 机器学习:
-      - 1. 机器学习数学相关: machine-learning/math.md
-      - 2. 机器学习算法: machine-learning/machine-learning-algorithm.md
-      - 3. 机器学习与量化交易: machine-learning/quantitative-trading.md
+      - 机器学习数学: machine-learning/math.md
+      - 机器学习算法: machine-learning/machine-learning-algorithm.md
+      - 机器学习与量化交易: machine-learning/quantitative-trading.md
   - 深度学习:
-      - 1. CNN: deep-learning/tensorflow.md
-      - 2. RNN: deep-learning/tensorflow.md
-      - 3. TensorFlow: deep-learning/tensorflow.md
+      - CNN: deep-learning/tensorflow.md
+      - RNN: deep-learning/tensorflow.md
+      - TensorFlow: deep-learning/tensorflow.md
 theme:
   name: mkdocs
   custom_dir: custom_theme
