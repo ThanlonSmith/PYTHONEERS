@@ -80,3 +80,21 @@ body > div.container > div.col-md-3 > div > ul > li > a {
 }
 
 /*----！菜单栏样式----*/
+
+body > footer > hr {
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 0;
+}
+
+body > footer > p {
+    font-size: 15px;
+}
+
+#qq > img, #wechat > img, #weibo > img, #go_top > img {
+    border: none;
+    padding: 0;
+    background: none;
+}
