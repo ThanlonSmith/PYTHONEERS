@@ -15,7 +15,7 @@ pre code {
 }
 
 font {
-    color: #d14;
+    color: #A30000;
     font-weight: 600;
 }
 
@@ -49,28 +49,34 @@ body > div.container > div.col-md-3 {
     background-repeat: no-repeat;
     border: 1px solid #d5d5d5;
 }
-.gh-btn:hover {
+
+.gh-btn:hover, .gh-btn:visited {
     background-image: none;
     text-decoration: none;
     color: #333333;
 }
+
 .gh-btn, .gh-count, .gh-ico {
     float: left;
 }
+
 .gh-ico {
     width: 14px;
     height: 14px;
     margin-right: 2px;
     background: url(../img/github.svg) 0 0 / 100% 100% no-repeat;
-    margin-top: 2px;
+    margin-top: 3px;
 }
+
 /*----！github图标的样式----*/
 
-body > div.container > div.col-md-9 > p:nth-child(1){
+body > div.container > div.col-md-9 > p:nth-child(1) {
     margin-top: 10px;
 }
+
 /*----菜单栏样式----*/
-body > div.container > div.col-md-3 > div > ul > li> a{
+body > div.container > div.col-md-3 > div > ul > li > a {
     color: #A30000;
 }
+
 /*----！菜单栏样式----*/

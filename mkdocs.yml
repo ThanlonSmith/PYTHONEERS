@@ -1,4 +1,4 @@
-site_name: 小浪人
+site_name: PYTHONER
 site_author: Erics
 site_description: '小浪人平台是专为Python工程师、AI工程师、算法工程师等Python相关职业人群提供技术支持、源代码共享的综合平台。未来是人工智能的天下，小浪人愿意做人工智能技术的推动者。'
 #copyright: docs.xiaolangren.cn
@@ -10,7 +10,7 @@ extra_css:
 use_directory_urls: true # 默认是true
 extra_javascript:
   - js/main.js
-#  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+  #  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
   - js/busuanzi.pure.mini.js
 plugins: []
 #repo_url: https://github.com/example/repository/
@@ -20,24 +20,25 @@ repo_name: 'GitHub' # 默认
 remote_branch: gh-pages # 默认
 #当使用gh-deploy部署到Github Pages时，设置要推送到的远程名称。 可以通过gh-deploy中的命令行选项覆盖此选项。
 remote_name: origin
-dev_addr: '127.0.0.1:8000'
+dev_addr: '127.0.0.1:6001'
 nav:
-  - 首页: index.md
-  - Python:
-      - Python: python/python3.md
+  #  - 主页: index.md
+  - Python语言:
+      - 基础到进阶: python/python3.md
+      - 第三方模块: python/python3.md
+      - 面试题题解: python/interview.md
       - 设计模式: python/design-pattern.md
       - 数据结构: python/data-structure.md
       - 算法基础: python/algorithm.md
       - Leetcode: python/leetcode.md
       - 剑指Offer: python/offer.md
-      - 面试题: python/interview.md
   - Python Web:
       - Django: python-web/django.md
       - Django Rest Framework: python-web/drf.md
       - Flask: python-web/flask.md
-      - Mysql: python-web/mysql.md
+      - MySQL: python-web/mysql.md
       - Redis: python-web/redis.md
-      - 面试题: python-web/interview.md
+      - 面试题题解: python-web/interview.md
   - Python GUI:
       - PyQt5: gui/pyqt5.md
   - 网络爬虫:
@@ -50,12 +51,12 @@ nav:
   - 计算机视觉:
       - OpenCV: computer-vision/opencv.md
   - 机器学习:
-      - 机器学习数学: machine-learning/math.md
-      - 机器学习算法: machine-learning/machine-learning-algorithm.md
+#      - 机器学习中的数学: machine-learning/math.md
+#      - 机器学习中的算法: machine-learning/machine-learning-algorithm.md
       - 机器学习与量化交易: machine-learning/quantitative-trading.md
   - 深度学习:
-      - CNN: deep-learning/tensorflow.md
-      - RNN: deep-learning/tensorflow.md
+#      - CNN: deep-learning/tensorflow.md
+#      - RNN: deep-learning/tensorflow.md
       - TensorFlow: deep-learning/tensorflow.md
 theme:
   name: mkdocs
