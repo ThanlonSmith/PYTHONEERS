@@ -30,18 +30,19 @@ remote_branch: gh-pages # 默认
 remote_name: origin
 dev_addr: '127.0.0.1:6001'
 #设置版权信息以包含在主题的文档中
-copyright: Copyright © 2020-2022 www.pythoner.org All Rights Reserved <p id="busuanzi_container_site_pv">本站访问量<span id="busuanzi_value_site_pv"></span>次 <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span></p>
+copyright: Copyright © 2020-2022 www.pythoner.org All Rights Reserved<p id="busuanzi_container_site_pv">本站访问量：<span id="busuanzi_value_site_pv"></span>次</p>
 #设置Google Analytics跟踪配置。
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 nav:
   #  - 主页: index.md
-  - Python语言:
+  - Python:
       - 基础到进阶: python/python3.md
-      - 第三方模块: python/python3.md
-      - 面试题题解: python/interview.md
+      - 内置模块与第三方模块: python/module.md
+#      - 第三方模块: python/third-party.md
+#      - 面试题题解: python/interview.md
+      - 数据结构与算法: python/data-structure.md
       - 设计模式: python/design-pattern.md
-      - 数据结构: python/data-structure.md
-      - 算法基础: python/algorithm.md
+#      - 算法基础: python/algorithm.md
       - Leetcode: python/leetcode.md
       - 剑指Offer: python/offer.md
   - Python Web:
@@ -50,11 +51,11 @@ nav:
       - Flask: python-web/flask.md
       - MySQL: python-web/mysql.md
       - Redis: python-web/redis.md
-      - 面试题题解: python-web/interview.md
+#      - 面试题题解: python-web/interview.md
   - Python GUI:
       - PyQt5: gui/pyqt5.md
   - 网络爬虫:
-      - Requests: web-crawler/requests.md
+#      - Requests: web-crawler/requests.md
       - Scrapy: web-crawler/scrapy.md
   - 数据分析:
       - NumPy: data-analysis/numpy.md

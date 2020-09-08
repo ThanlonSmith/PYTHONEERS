@@ -20,26 +20,25 @@ Python 在设计上坚持了清晰划一的风格，这使得 Python 成为一�
 ##### Python应用领域
 Python是一种解释型脚本语言，可以应用于以下领域：<font>Web开发</font>，<font>科学计算和统计</font>，<font>人工智能</font>，<font>桌面界面开发</font>，<font>网络爬虫等。</font>
 <hr>
-<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 1px" id="plug-ins">
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
     <div style="position: relative;float: right">
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq"
-           style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
-            <img width="20" height="20" src="./img/qq.png" alt=""
+        <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/csdn.ico" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
                  style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
         </a>
         <a href="javascript:" id="wechat"
            style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
-            <img width="22" height="20" src="./img/wechat.png" alt=""
-                 style="margin-top: 10px;margin-left: 9px">
-        </a>
-        <a href="javascript:" id="weibo"
-           style="display: block;width: 40px;height: 40px;background-color: #ff6b3f;;margin-top: 1px">
-            <img width="22" height="20" src="./img/weibo.png" alt=""
+            <img width="22" height="20" src="../img/wechat.png"
                  style="margin-top: 10px;margin-left: 9px">
         </a>
         <a href="javascript:" id="go_top"
            style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
-            <img width="22" height="20" src="./img/top.png" alt=""
+            <img width="22" height="20" src="../img/top.png" alt=""
                  style="margin-top: 10px;margin-left: 9px">
         </a>
     </div>

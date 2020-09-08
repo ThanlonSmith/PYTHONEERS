@@ -98,3 +98,7 @@ body > footer > p {
     padding: 0;
     background: none;
 }
+body > div.container > div.col-md-9 > p > kbd{
+    background-color: #A30000;
+    padding: 4px 4px 2px 4px;
+}
