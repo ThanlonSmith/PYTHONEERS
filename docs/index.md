@@ -24,7 +24,7 @@ Python是一种解释型脚本语言，可以应用于以下领域：<font>Web�
     <div style="position: relative;float: right">
         <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
            style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
-            <img width="22" height="20" src="../img/csdn.ico" alt=""
+            <img width="22" height="20" src="../img/csdn.jpeg" alt=""
                  style="margin-top: 10px;margin-left: 9px">
         </a>
         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
@@ -43,3 +43,4 @@ Python是一种解释型脚本语言，可以应用于以下领域：<font>Web�
         </a>
     </div>
 </div>
+<script data-ad-client="ca-pub-6937898095875663" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

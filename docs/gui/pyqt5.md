@@ -11,27 +11,28 @@
 ![](../img/pyqt5.jpeg)
 
 #### 1. PyQt5基础
+<hr>
+
 ##### 1.1 GUI编程学什么
-- 大致了解你所选择的GUI库
+（1）大致了解你所选择的GUI库
 
-- 基本的程序的结构：使用这个GUI库来运行你的GUI程序
+（2）基本的程序的结构：使用这个GUI库来运行你的GUI程序
 
-- 各种控件的特性和如何使用
+（3）各种控件的特性和如何使用
 
-- 控件的样式
+（4）控件的样式
 
-- 资源的加载
+（5）资源的加载
 
-- 控件的布局
+（6）控件的布局
 
-- 事件和信号
+（7）事件和信号
 
-- 动画特效
+（8）动画特效
 
-- 界面跳转
+（9）界面跳转
 
-- 设计工具的使用
-
+（10）设计工具的使用
 <hr>
 
 ##### 1.2 PyQT是什么
@@ -309,7 +310,7 @@ if __name__ == '__main__':
     <div style="position: relative;float: right">
         <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
            style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
-            <img width="22" height="20" src="../img/csdn.ico" alt=""
+            <img width="22" height="20" src="../img/csdn.jpeg" alt=""
                  style="margin-top: 10px;margin-left: 9px">
         </a>
         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">

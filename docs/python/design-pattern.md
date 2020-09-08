@@ -1220,7 +1220,7 @@ MyWindow("Hello...").run()
     <div style="position: relative;float: right">
         <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
            style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
-            <img width="22" height="20" src="../img/csdn.ico" alt=""
+            <img width="22" height="20" src="../img/csdn.jpeg" alt=""
                  style="margin-top: 10px;margin-left: 9px">
         </a>
         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
