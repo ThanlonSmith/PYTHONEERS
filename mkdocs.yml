@@ -40,7 +40,7 @@ nav:
       - 内置模块与第三方模块: python/module.md
 #      - 第三方模块: python/third-party.md
 #      - 面试题题解: python/interview.md
-      - 数据结构与算法: python/data-structure.md
+      - 数据结构与算法: python/algorithm.md
       - 设计模式: python/design-pattern.md
 #      - 算法基础: python/algorithm.md
       - Leetcode: python/leetcode.md
@@ -67,10 +67,10 @@ nav:
       #      - 机器学习中的数学: machine-learning/math.md
       #      - 机器学习中的算法: machine-learning/machine-learning-algorithm.md
       - 机器学习与量化交易: machine-learning/quantitative-trading.md
-  - 深度学习:
+  - 深度学习: deep-learning/deep-learning.md
       #      - CNN: deep-learning/tensorflow.md
       #      - RNN: deep-learning/tensorflow.md
-      - TensorFlow: deep-learning/tensorflow.md
+#      - TensorFlow: deep-learning/tensorflow.md
 theme:
   name: mkdocs
   custom_dir: custom_theme

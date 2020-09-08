@@ -1,5 +1,17 @@
-### 1. PyQt5基础
-#### 1.1 GUI编程学什么
+<span id="busuanzi_container_page_pv">阅读量：<span id="busuanzi_value_page_pv"></span>次</span>
+<span class="github-btn github-stargazers pull-right">
+<a class="gh-btn" href="javascript:;" rel="noopener noreferrer" target="" aria-label="Star encode/django-rest-framework on GitHub">
+    <span class="gh-ico" aria-hidden="true"></span> 
+    <span class="gh-text">Star</span> 
+</a>
+<a class="gh-count" href="https://github.com/encode/django-rest-framework/stargazers" rel="noopener noreferrer" target="_blank" aria-hidden="true"></a>
+</span>
+<hr>
+
+![](../img/pyqt5.jpeg)
+
+#### 1. PyQt5基础
+##### 1.1 GUI编程学什么
 - 大致了解你所选择的GUI库
 
 - 基本的程序的结构：使用这个GUI库来运行你的GUI程序
@@ -22,12 +34,11 @@
 
 <hr>
 
-#### 1.2 PyQT是什么
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QT是跨平台C++库的集合，它实现高级API来访问现代桌面和移动系统的许多方面。这些服务包括定位和定位服务、多媒体、NFC和蓝牙连接、基于Chromium的web浏览器以及传统的UI开发。PyQt5是Qt v5的一组完整的Python绑定。它被实现为超过35个扩展模块，并使Python在所有支持的平台（包括IOS和Android）上被用作C++的替代应用程序开发语言。PyQT5也可以嵌入在基于C++的应用程序中，以允许这些应用程序的用户配置或增强这些应用程序的功能。
-
+##### 1.2 PyQT是什么
+QT是跨平台C++库的集合，它实现高级API来访问现代桌面和移动系统的许多方面。这些服务包括定位和定位服务、多媒体、NFC和蓝牙连接、基于Chromium的web浏览器以及传统的UI开发。PyQt5是Qt v5的一组完整的Python绑定。它被实现为超过35个扩展模块，并使Python在所有支持的平台（包括IOS和Android）上被用作C++的替代应用程序开发语言。PyQT5也可以嵌入在基于C++的应用程序中，以允许这些应用程序的用户配置或增强这些应用程序的功能。
 <hr>
 
-#### 1.3 PyQT的优势
+##### 1.3 PyQT的优势
 - 简单好用
 
 - 功能强大
@@ -45,7 +56,7 @@
 - 开源免费：PyQT是双重许可的，开发人员可以在GPL和商业许可之间进行选择。采用GPL协议，软件著作权属于开发者本人所有，受国际相关版权法保护，允许其他用户对原作者软件进行复制和发行，也可以更改后发型自己的软件。
 <hr>
 
-#### 1.4 开发环境的安装
+##### 1.4 开发环境的安装
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先，基本的 Python3 环境和 PyCharm 开发工具的安装，由于比较简单，博主在这里不再详细演示了！实在有问题的可以自行Google或者百度。其次就是GUI开发环境的安装，也就是安装PyQT5。这里演示在Python的虚拟环境中来安装PyQT5（Ubuntu Linux系统）：
 ```python
 # 在Python全局环境中安装pipenv
@@ -77,7 +88,7 @@ $ pipenv shell
 
 <hr>
 
-#### 1.5 第一个pyqt5桌面应用
+##### 1.5 第一个pyqt5桌面应用
 **`示例代码：`**
 
 ```python
@@ -111,8 +122,8 @@ if __name__ == '__main__':
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200110090054186.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
 <hr>
 
-### 2. QtDesigner
-#### 2.1 安装和配置
+#### 2. QtDesigner
+##### 2.1 安装和配置
 安装Qt的工具包：
 ```shell 
 $ pip install PyQt5-tools -i https://pypi.douban.com/simple
@@ -124,7 +135,7 @@ $ pip install PyQt5-tools -i https://pypi.douban.com/simple
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200830144746568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 <hr>
 
-#### 2.2 快速入门
+##### 2.2 快速入门
 可以通过配置好的PyCharm扩展工具直接打开QTDesigner：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020083021590726.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
@@ -136,7 +147,7 @@ Ctrl+S后可以将其保存到项目根目录：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200830215855388.png#)
 <hr>
 
-#### 2.3 将ui文件转换成py文件
+##### 2.3 将ui文件转换成py文件
 第一种方法：
 ```shell
 $ python -m PyQt5.uic.pyuic demo.ui -o demo.py
@@ -159,7 +170,7 @@ $ pyuic5 demo.ui -o demo.py
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200830220420797.png#)
 <hr>
 
-#### 2.4 水平布局
+##### 2.4 水平布局
 使用水平布局的方式在QtDesigner中做一些简单的操作，如下图所示：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831005410111.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 将.ui文件转换成.py文件后新建 **`RunMainWinHorizontalLayout.py`** 文件用来运行转换之后的.py文件 **`MainWinHorizontalLayout.py`**：
@@ -186,7 +197,7 @@ if __name__ == '__main__':
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831010754336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 <hr>
 
-#### 2.5 垂直布局
+##### 2.5 垂直布局
 使用垂直布局的方式在QtDesigner中了做一些简单的操作，如下图所示：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831011634495.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 将.ui文件转换成.py文件后新建 **`RunMainWinVerticalLayout.py`** 文件用来运行转换之后的.py文件 **`MainWinVerticalLayout.py`**：
@@ -214,7 +225,7 @@ if __name__ == '__main__':
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831012547133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 <hr>
 
-#### 2.6 同时使用水平布局和垂直布局
+##### 2.6 同时使用水平布局和垂直布局
 “姓名”和“薪资”两行都使用水平布局，“备注+文本框”和它们一起使用垂直布局：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831021549807.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 将.ui文件转换成.py文件后新建 **`RunMainWinHVLayout.py`** 文件用来运行转换之后的.py文件：
@@ -240,7 +251,7 @@ if __name__ == '__main__':
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831022254214.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#pic_center)
 <hr>
 
-#### 2.7 栅格布局
+##### 2.7 栅格布局
 下面是使用栅格布局设计的：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831023151568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
@@ -268,7 +279,7 @@ if __name__ == '__main__':
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200831023513476.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 <hr>
 
-#### 2.8 表单布局
+##### 2.8 表单布局
 下面是使用表单布局设计的：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200902144428605.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
 将.ui文件转换成.py文件后新建 **`RunMainWinFormLayout.py`** 文件用来运行转换之后的.py文件：
@@ -294,3 +305,26 @@ if __name__ == '__main__':
 >**右键选择布局的时候选择“在窗体布局中布局”。**
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020090214474383.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#)
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/csdn.ico" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>

@@ -491,3 +491,26 @@ plt.show()
 ```
 `饼图的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200116144646651.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/csdn.ico" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>
