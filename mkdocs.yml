@@ -30,7 +30,7 @@ remote_branch: gh-pages # 默认
 remote_name: origin
 dev_addr: '127.0.0.1:6001'
 #设置版权信息以包含在主题的文档中
-copyright: Copyright © 2020-2022 docs.pythoneers.cn All Rights Reserved<p id="busuanzi_container_site_pv">本站访问量：<span id="busuanzi_value_site_pv"></span>次</p>
+copyright: Copyright © 2020-2022 pythoneers.cn All Rights Reserved. <p id="busuanzi_container_site_pv">本站访问量：<span id="busuanzi_value_site_pv"></span>次</p>
 #设置Google Analytics跟踪配置。
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 nav:

@@ -98,7 +98,23 @@ body > footer > p {
     padding: 0;
     background: none;
 }
-body > div.container > div.col-md-9 > p > kbd{
+
+body > div.container > div.col-md-9 > p > kbd {
     background-color: #A30000;
     padding: 4px 4px 2px 4px;
+}
+
+/*鼠标划过导航的样式*/
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #212121;
+}
+
+/*！鼠标划过导航的样式！*/
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: #111111;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
+    color: #F44336;
+    background-color: #eeeeee;
 }
