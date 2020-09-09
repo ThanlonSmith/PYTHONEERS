@@ -118,3 +118,6 @@ body > div.container > div.col-md-9 > p > kbd {
     color: #F44336;
     background-color: #eeeeee;
 }
+h4,h5{
+    font-weight: 600;
+}
