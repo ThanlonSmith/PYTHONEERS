@@ -125,3 +125,6 @@ a:hover, a:focus {
     color: #333333;
     text-decoration: none;
 }
+p {
+    line-height: 1.8;
+}
