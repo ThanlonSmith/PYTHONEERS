@@ -121,3 +121,7 @@ body > div.container > div.col-md-9 > p > kbd {
 h4,h5{
     font-weight: 600;
 }
+a:hover, a:focus {
+    color: #333333;
+    text-decoration: none;
+}

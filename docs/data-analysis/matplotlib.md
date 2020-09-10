@@ -1,18 +1,36 @@
->@[toc]
-###### 1 初识Matplotlib
-Matplotlib是一种可视化工具，可视化工具是数据挖掘中的关键辅助工具，可以清晰地将数据展现给我们，帮助我们调整分析方法。Matplotlib能够将数据进行可视化，更加直观的呈现给我们，使数据更加客观、更具有说服力。
-###### 2 基础图形的绘制
-matplotlib.pyplot模块包含了一系列类似于matlab的画图函数，使用的时候只需要导入：`import matplotlib.pyplot as plt`。
+<span id="busuanzi_container_page_pv">阅读量：<span id="busuanzi_value_page_pv"></span>次</span>
+<span class="github-btn github-stargazers pull-right">
+<a class="gh-btn" href="" rel="noopener noreferrer" target="_blank" aria-label="Star encode/django-rest-framework on GitHub">
+    <span class="gh-ico" aria-hidden="true"></span> 
+    <span class="gh-text">Star</span> 
+</a>
+<a class="gh-count" href="https://github.com/encode/django-rest-framework/stargazers" rel="noopener noreferrer" target="_blank" aria-hidden="true"></a>
+</span>
+<hr>
 
-图形回执流程：
-- 创建画布：`plt.figure()`
-- 绘制图像：`plt.plot(x,y)`
-- 显示图像：`plt.show()`
+![数据结构与算法](../img/matplotlib.jpg)
 
-例１：展示上海一周的天气温度
+#### 基础图像的绘制
+Matplotlib 是一种可视化工具，可视化工具是数据挖掘中的关键辅助工具，可以清晰地将数据展现给我们，帮助我们调整分析方法。Matplotlib 能够将数据进行可视化，更加直观的呈现给我们，使数据更加客观、更具有说服力。
+<hr>
 
-`参考代码：`	
-```py
+##### 1. 图像绘制流程
+matplotlib.pyplot 模块包含了一系列类似于 matlab 的画图函数，使用的时候只需要：
+```python
+import matplotlib.pyplot as plt
+```
+图形绘制流程：
+
+( 1 ) 创建画布：<kbd>plt.figure()</kbd>
+
+( 2 ) 绘制图像：<kbd>plt.plot(x,y)</kbd>
+
+( 3 ) 显示图像：<kbd>plt.show()</kbd>
+<hr>
+
+##### 2. 第一次绘制图像
+例1：展示上海一周的天气温度：
+```python
 import matplotlib.pyplot as plt
 # 创建画布
 plt.figure(figsize=(8,4),dpi=100)
@@ -22,11 +40,12 @@ plt.plot([1,2,3,4,5,6,7],[11,13,15,17,8,4,3])
 plt.show()
 ```
 `绘制的效果图：`
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200113120941521.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例２：画出某城市11点～12点这１小时内的每分钟的温度变化折线图，温度范围在15～18度之间（某城市温度变化图）
 
-`参考代码：`	
-```py
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200113120941521.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
+
+例2：展示某城市11点～12点这１小时内的每分钟的温度变化折线图，温度范围在15～18度之间（温度变化图）：
+
+```python
 # 导入所需要模块
 import random,matplotlib.pyplot as plt
 # 数据准备
@@ -40,14 +59,17 @@ plt.plot(x,y)
 plt.show()
 ```
 `绘制的效果图：`
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200113133722304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例３：添加自定义ｘ和ｙ刻度
+<hr>
 
-- ｘ要显示的刻度：`plt.xticks(x,**kwargs)`
-- ｙ要显示的刻度：`plt.xticks(y,**kwargs)`
+##### 3. 添加自定义ｘ和ｙ刻度
 
-`参考代码：`
-```py
+( 1 ) ｘ要显示的刻度：<kbd>plt.xticks(x,**kwargs)</kbd>
+
+( 2 ) ｙ要显示的刻度：<kbd>plt.xticks(y,**kwargs)</kbd>
+
+```python
 # 导入模块
 import random
 import  matplotlib.pyplot as plt
@@ -68,17 +90,53 @@ plt.yticks(y_ticks_lable[::5])
 # 图像显示
 plt.show()
 ```
+<br>
 `绘制的效果图：`
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200114102134970.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-matplotlib是支持中文的，只是在配置信息里没有中文字体的相关信息。所以，我们需要解决中文显示的问题，解决方案１(这里使用ubuntu linux平台为例)：
-```py
+<hr>
+
+##### 4. 解决中文不能正常显示的问题
+matplotlib 是支持中文的，只是在配置信息里没有中文字体的相关信息。所以需要解决中文显示的问题，
+
+( 1 ) 解决方案1：
+
+下载 simhei 字体文件：
+```python
+$ wget http://z1.zhaodll.com:81/font/s/simhei.ttf.zip
+```
+解压缩文件将字体拷贝到/usr/share/fonts/目录下：
+```python
+$ unzip simhei.ttf.zip
+$ sudo cp simhei.ttf /usr/share/fonts/
+```
+查看matplotlib配置文件的位置和配置文件的名称：
+```python
+$ ipython
+In [1]: import matplotlib as mpl                                                                              
+
+In [2]: mpl.get_configdir()                                                                                   
+Out[2]: '/home/thanlon/.config/matplotlib'
+
+In [3]: mpl.matplotlib_fname()                                                                                
+Out[3]: '/home/thanlon/.config/matplotlib/matplotlibrc'
+```
+
+```python
+
+
+```python
+
+```
+
+```python
 # 下载simhei字体
-thanlon@thanlon-master:~$ wget http://z1.zhaodll.com:81/font/s/simhei.ttf.zip
-thanlon@thanlon-master:~$ unzip simhei.ttf.zip
+
+
 # 将字体拷贝到/usr/share/fonts/目录下
-thanlon@thanlon-master:~$ sudo cp simhei.ttf /usr/share/fonts/
+
 # 激活虚拟环境
-thanlon@thanlon-master:~$ source PycharmProjects/venv/machine-learning/bin/activate
+
 # 查看matplotlib配置文件的位置和配置文件的名称
 (machine-learning) thanlon@thanlon-master:~$ ipython
 Python 3.7.5 (default, Nov 20 2019, 09:21:52) 
@@ -104,10 +162,10 @@ axes.unicode_minus:False
 ```
 `成功解决中文显示问题：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200114174447109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
+
 解决方案２：
 在Python脚本中动态设置matplotlibrc，可以避免由于改变配置带来的问题。有时候，字体更改后会导致坐标轴中的部分字符无法显示，此时需要更改axes.unicode_minus参数：
-```py
-# 导入模块
+```python
 import random
 import  matplotlib.pyplot as plt
 from pylab import mpl
@@ -132,11 +190,8 @@ plt.yticks(y_ticks_lable[::5])
 # 图像显示
 plt.show()
 ```
-例４：以网格的方式显示
-
-`参考代码：`	
-```py
-# 导入模块
+##### 5. 添加网格
+```python
 import random
 import  matplotlib.pyplot as plt
 # 数据准备
@@ -158,12 +213,14 @@ plt.grid(True,linestyle = '--',alpha = 0.5) # True表示显示；linestyle表示
 plt.show()
 ```
 `绘制的效果图：`
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200114174826890.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例５：添加描述信息，添加x和y轴以及标题的描述信息，设置图像中字体的大小显示
 
-`参考代码：`	
-```py
-# 导入模块
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200114174826890.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
+<hr>
+
+##### 6. 添加描述信息
+添加描述信息，添加x和y轴以及标题的描述信息，设置图像中字体的大小显示：
+
+```python
 import random
 import  matplotlib.pyplot as plt
 # 数据准备
@@ -189,11 +246,12 @@ plt.show()
 ```
 `绘制的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200115010303975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例６：图像保存
-图像保存使用到	`plt.savefig('tmp.png')`，在使用`plt.show()`显示图像后会figure资源，所以在显示图像之后保存图像，就会保存一个空的图像。所以，我们需要在显示图像之前保存图像。
-`参考代码：`	
-```py
-# 导入模块
+<hr>
+
+##### 7. 保存图像
+图像保存使用到 <kbd>plt.savefig('tmp.png')</kbd>，在使用 <kbd>plt.show()</kbd> 显示图像后会 figure 资源，所以在显示图像之后保存图像，就会保存一个空的图像。所以，我们需要在显示图像之前保存图像：
+
+```python
 import random
 import  matplotlib.pyplot as plt
 # 数据准备
@@ -221,11 +279,11 @@ plt.show()
 ```
 `绘制的效果图与例５是一致的，这里查看一下保存的图像：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200115012133569.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例７：在一个坐标系中绘制多个图像
+<hr>
 
-`参考代码：`	
-```py
-# 导入模块
+##### 8. 在一个坐标系中绘制多个图像
+
+```python
 import random
 import  matplotlib.pyplot as plt
 # 数据准备
@@ -257,14 +315,34 @@ plt.show()
 ```
 `绘制的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200115091814824.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例８：在一个坐标系中绘制多个图像并设置图像风格
+<hr>
 
-`颜色字符`：r表示红色，g表示绿色，b表示蓝色，w表示白色，c表示青色，m表示洋红，y表示黄色，k表示黑色。
+##### 9. 设置图像风格
+( 1 ) 代表图像颜色的字符
 
-`风格`：`-`表示实线，`- -`表示虚线，`-.`表示点划线，`:`表示点虚线，`''`表示留空、空格。
+|颜色字符|解释|
+| - | - |
+| r  | 红色  |
+|  g | 绿色  |
+|  b | 蓝色  |
+|   w|  白色 |
+|   c| 青色  |
+|   m|  洋红 |
+|   y| 黄色  |
+|   k|黑色   |
+|||
 
-`参考代码：`	
-```py
+( 2 ) 代表图像风格的字符
+
+| 风格字符 | 解释  |
+| - | - |
+| -  |  实线 |
+|  - - | 虚线  |
+|  -. |  点划线 |
+|  : | 虚线  |
+|  '' | 留空、空格  |
+|||
+```python
 # 导入模块
 import random
 import  matplotlib.pyplot as plt
@@ -297,9 +375,11 @@ plt.show()
 ```
 `绘制的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020011509191939.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例９：在一个坐标系中绘制多个图像并添加图例
+<hr>
 
-位置的选择：
+##### 10. 添加图例
+添加图例需要设置图例的位置：
+
 | 位置字符串 | 位置代码 |
 |--|--|
 | best |  0|
@@ -313,9 +393,9 @@ plt.show()
 | lower center | 8 |
 | upper center| 9 |
 | center| 10 |
-`参考代码：`	
+|||
+	
 ```py
-# 导入模块
 import random
 import  matplotlib.pyplot as plt
 # 数据准备
@@ -349,10 +429,10 @@ plt.show()
 ```
 `绘制的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200115095523604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-例 10：在多个坐标系中绘制多个图像
+<hr>
 
-`参考代码：`	
-```py
+##### 11. 在多个坐标系中绘制多个图像
+```python
 # 导入模块
 import matplotlib.pyplot as plt
 import random
@@ -393,13 +473,18 @@ plt.show()
 ```
 `绘制的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020011521004815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-###### 3 常见图形的绘制
-Matplotlib能够绘制<font color='red'>**折线图、散点图、柱状图、直方图、饼图**</font>。在选择以何种方式展示数据时，我们需要明确各种统计图的意义。
+<hr>
 
-折线图：以折线的上升或下降来表示统计数量的增减变化的统计图。特点是能够显示数据的变化趋势，反应事物的变化情况。使用的的方法是：`matplotlib.pyplot.plot(*args, scalex=True, scaley=True, data=None, **kwargs)`。
+#### 常见图像的绘制
+Matplotlib能够绘制 <font>折线图、散点图、柱状图、直方图、饼图</font>。在选择以何种方式展示数据时，我们需要明确各种统计图的意义。
+<hr>
 
-`参考代码：`
-```py
+##### 1. 绘制折线图
+折线图：以折线的上升或下降来表示统计数量的增减变化的统计图。特点是能够显示数据的变化趋势，反应事物的变化情况。使用的的方法是：
+```python
+matplotlib.pyplot.plot(*args, scalex=True, scaley=True, data=None, **kwargs)
+```
+```python
 # 导入相关模块
 import matplotlib.pyplot as plt
 import random
@@ -421,11 +506,14 @@ plt.savefig('/home/thanlon/tmp.png')
 plt.show()
 ```
 `折线图的效果图：`
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200116104859812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-散点图：用两组数据构成多个坐标点，考察坐标点的分布，判断了两变量之间是否存在某种关联，以及总结坐标点的分布模式。使用到的方法是：`matplotlib.pyplot. scatter ( x, y, s=None, c=None, marker=None, cmap=None, norm=None, vmin=None, vmax=None, alpha=None, linewidths=None, verts=None, edgecolors=None, hold=None, data=None, **kwargs )`。
 
-`参考代码：`
-```py
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200116104859812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
+##### 2. 绘制散点图
+散点图：用两组数据构成多个坐标点，考察坐标点的分布，判断了两变量之间是否存在某种关联，以及总结坐标点的分布模式。使用到的方法是：
+```python
+matplotlib.pyplot. scatter ( x, y, s=None, c=None, marker=None, cmap=None, norm=None, vmin=None, vmax=None, alpha=None, linewidths=None, verts=None, edgecolors=None, hold=None, data=None, **kwargs )
+```
+```python
 # 导入相关模块
 import matplotlib.pyplot as plt
 import random
@@ -446,10 +534,14 @@ plt.show()
 ```
 `散点图的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200116123150730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-柱状图：排列在工作表的列或行中的数据可以绘制到柱状图中，特点是很容易看出数据的大小，适用于统计和对比数据。使用的方法是：`matplotlib.pyplot. bar ( left, height, width=0.8, bottom=None, hold=None, data=None, **kwargs )`。
+<hr>
 
-`参考代码：`
-```py
+##### 3. 绘制柱状图
+柱状图：排列在工作表的列或行中的数据可以绘制到柱状图中，特点是很容易看出数据的大小，适用于统计和对比数据。使用的方法是：
+```python
+matplotlib.pyplot. bar ( left, height, width=0.8, bottom=None, hold=None, data=None, **kwargs )
+```
+```python
 import matplotlib.pyplot as plt
 # 数据的准备
 x_movie_names = ['唐人街探案3', '姜子牙', '囧妈', '中国女排', '紧急救援', '熊出没·狂野大陆', '急先锋', '我在时间尽头等你', '妙先生', '抵达之谜']
@@ -471,13 +563,17 @@ plt.show()
 ```
 `柱状图的效果图：`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200116134901255.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70)
-饼图：用于表示不同分类的占比情况，通过弧度大小来对比各种分类。使用函数是：`matplotlib.pyplot.pie(x, explode=None, labels=None, colors=None, autopct=None,
+<hr>
+
+##### 4. 绘制饼图
+用于表示不同分类的占比情况，通过弧度大小来对比各种分类。使用函数是：
+```python
+matplotlib.pyplot.pie(x, explode=None, labels=None, colors=None, autopct=None,
         pctdistance=0.6, shadow=False, labeldistance=1.1,
         startangle=None, radius=None, counterclock=True,
         wedgeprops=None, textprops=None, center=(0, 0), frame=False,
-        rotatelabels=False, *, data=None))`。
-
-`参考代码：`
+        rotatelabels=False, *, data=None))
+```
 ```py
 import matplotlib.pyplot as plt
 # 绘制画布
@@ -495,7 +591,7 @@ plt.show()
     <div style="position: relative;float: right">
         <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
            style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
-            <img width="22" height="20" src="../img/csdn.ico" alt=""
+            <img width="22" height="20" src="../img/csdn.jpeg" alt=""
                  style="margin-top: 10px;margin-left: 9px">
         </a>
         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">

@@ -1,9 +1,9 @@
 site_name: PYTHONEERS
-# 设置站点的规范URL。 这将添加带有规范URL的链接标记到生成的HTML标头。
-site_url: null
+# 设置站点的规范URL。这将添加带有规范URL的链接标记到生成的HTML标头。
+site_url: https://docs.pythoneers.cn
 site_author: Erics
 # 站点描述
-site_description: 'PYTHONER是专为Python相关职业人群提供知识分享共享的平台。'
+site_description: 'PYTHONERS.cn是专为以Python为首要编程语言的，计划从事或已经从事Python工作的工程师、技术专家、科研人员等，以及对Python感兴趣的任何人群免费提供文档学习、知识共享的平台。PYTHONERS将永久致力于维护国内Python生态环境的发展。'
 #copyright: docs.xiaolangren.cn
 site_dir: site
 docs_dir: 'docs'
@@ -30,7 +30,7 @@ remote_branch: gh-pages # 默认
 remote_name: origin
 dev_addr: '127.0.0.1:6001'
 #设置版权信息以包含在主题的文档中
-copyright: Copyright © 2020-2022 pythoneers.cn All Rights Reserved. <p id="busuanzi_container_site_pv">本站访问量：<span id="busuanzi_value_site_pv"></span>次</p>
+copyright: null
 #设置Google Analytics跟踪配置。
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 nav:
@@ -38,11 +38,11 @@ nav:
   - Python:
       - 基础到进阶: python/python3.md
       - 内置模块与第三方模块: python/module.md
-#      - 第三方模块: python/third-party.md
-#      - 面试题题解: python/interview.md
+      #      - 第三方模块: python/third-party.md
+      #      - 面试题题解: python/interview.md
       - 数据结构与算法: python/algorithm.md
       - 设计模式: python/design-pattern.md
-#      - 算法基础: python/algorithm.md
+      #      - 算法基础: python/algorithm.md
       - Leetcode: python/leetcode.md
       - 剑指Offer: python/offer.md
   - Python Web:
@@ -51,11 +51,11 @@ nav:
       - Flask: python-web/flask.md
       - MySQL: python-web/mysql.md
       - Redis: python-web/redis.md
-#      - 面试题题解: python-web/interview.md
+  #      - 面试题题解: python-web/interview.md
   - Python GUI:
       - PyQt5: gui/pyqt5.md
   - 网络爬虫:
-#      - Requests: web-crawler/requests.md
+      #      - Requests: web-crawler/requests.md
       - Scrapy: web-crawler/scrapy.md
   - 数据分析:
       - NumPy: data-analysis/numpy.md
@@ -69,15 +69,17 @@ nav:
       - 机器学习与量化交易: machine-learning/quantitative-trading.md
   - 深度学习: deep-learning/deep-learning.md
       #      - CNN: deep-learning/tensorflow.md
-      #      - RNN: deep-learning/tensorflow.md
+    #      - RNN: deep-learning/tensorflow.md
 #      - TensorFlow: deep-learning/tensorflow.md
 theme:
   name: mkdocs
   custom_dir: custom_theme
+  # JavaScript库在代码块中突出显示源代码。 默认值：True。
   highlightjs: true
   hljs_languages:
     - yaml
     - rust
+    - python
   shortcuts:
     help: 191    # ?
     next: 78     # n

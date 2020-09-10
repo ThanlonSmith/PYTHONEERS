@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block footer %}
+<!--    <hr>-->
+    {% if config.copyright %}
+        <p>{{ config.copyright }}</p>
+    {% endif %}
+    <p>Copyright © 2020-2022 <a href="http://www.miit.gov.cn/" target="_blank">pythoneers.cn</a> All Rights Reserved.</p>
+    <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+{% endblock %}
+<!--
+{% block libs %}
+    {{ super() }}
+    <script async src="{{ base_url }}/js/somelib.js"></script>
+{% endblock %}
+-->
